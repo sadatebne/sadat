@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label{
+
+            display:block;
+            margin:10px;
+        }
+        input{
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>School Admission Form </h3>
+    <form>
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Write Name">
+
+        <!-- select file than alt+shift+keyboard down arrow for automatic copy -->
+
+        <label for="email">Your Email</label> 
+        <input id="email" type="email" placeholder="Write Email">
+
+        <fieldset>
+            <legend>Select All Off Them</legend>
+            <label for="male">
+                <input type="radio" name="Gender" id="male">Male 
+            </label>
+            <label for="female">
+                <input type="radio" name="Gender" id="female">Female
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend >Select Subject</legend>
+            <label for="bangla">
+                <input type="checkbox" name="subject" id="bangla">Bangla 
+            </label>
+            <label for="english">
+                <input type="checkbox" name="subject" id="english">English
+            </label>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
